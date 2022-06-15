@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import "./index.css";
 
-function App() {
+function NavBar() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header>
+      <h3 className="animate__animated animate__jello">octave</h3>
+
+      <nav className="nav animate__animated animate__slideInDown">
+        <ul>
+          <li>
+            <a href="#">therapy</a>
+          </li>
+          <li>
+            <a href="#">virtual</a>
+          </li>
+          <li>
+            <a href="#">coaching</a>
+          </li>
+          <li>
+            <a href="#">groups</a>
+          </li>
+          <li>
+            <a href="#">insurance</a>
+          </li>
+          <li>
+            <a href="#">resources</a>
+          </li>
+          <li>
+            <a href="#">location</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="log animate__animated animate__slideInRight">
+        <a href="#">Log in</a>
+      </div>
+    </header>
   );
 }
 
-export default App;
+export default NavBar;
